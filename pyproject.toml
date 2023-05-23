@@ -5,7 +5,7 @@ description = ""
 authors = ["y-marui"]
 
 [tool.poetry.dependencies]
-python = "^3.10"
+python = ">=3.10"
 numpy = "^1.23.3"
 astropy = "^5.1"
 matplotlib = "^3.6.1"
