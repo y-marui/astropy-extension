@@ -3,12 +3,11 @@
 """astropy の既存クラスの一部を拡張して、便利な関数を定義する."""
 import numpy as np
 import numpy.ma as ma
-
-from .units_format import Latex_Extention_no_flac
-
+import astropy.units as u
+from .units_format import LatexInlineNoFrac
 
 def labeled_quantity_support(xlabel="", ylabel="",
-                             format=Latex_Extention_no_flac):
+                             format=LatexInlineNoFrac):
     """Excute quantity_support with label.
 
     Enable support for plotting `astropy.units.Quantity` instances i
