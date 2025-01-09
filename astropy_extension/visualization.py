@@ -7,7 +7,7 @@ import astropy.units as u
 from .units_format import LatexInlineNoFrac
 
 def labeled_quantity_support(xlabel="", ylabel="",
-                             format=LatexInlineNoFrac):
+                             format=u.format.LatexInline):
     """Excute quantity_support with label.
 
     Enable support for plotting `astropy.units.Quantity` instances i
