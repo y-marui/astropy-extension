@@ -1,24 +1,7 @@
 import pylightxl as xl
 from astropy.table import QTable
 import astropy.units as u
-
-
-def get_units(units):
-    if isinstance(units, list):
-        return [_get_unit(unit) for unit in units]
-    else:
-        return _get_unit(units[0])
-
-
-def _get_unit(unit):
-    if unit == "":
-        return None
-    else:
-        v = u.Unit(unit)
-        if v.is_equivalent(1):
-            return 1 * v
-        else:
-            return v
+from . import get_units
 
 
 def read_excel_sheet(
