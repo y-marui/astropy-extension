@@ -4,7 +4,6 @@
 import numpy as np
 import numpy.ma as ma
 import astropy.units as u
-from .units_format import LatexInlineNoFrac
 
 def labeled_quantity_support(xlabel="", ylabel="",
                              format=u.format.LatexInline):
