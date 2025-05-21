@@ -5,10 +5,6 @@ import numpy as np
 from astropy import units as u
 from astropy.units.format import core, utils
 
-
-def def_exponential_as_unit(n):
-    return u.def_unit(f'10^{{{n}}}', 10**n * u.one, format={"LaTeX": f'10^{{{n}}}'})
-
 class LatexInlineNoFrac(u.format.Latex):
     """
     Output LaTeX to display the unit based on IAU style guidelines with negative
