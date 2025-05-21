@@ -3,7 +3,6 @@
 """astropy の既存クラスの一部を拡張して、便利な関数を定義する."""
 import numpy as np
 from astropy import units as u
-from astropy.units.format import core, utils
 
 class LatexInlineNoFrac(u.format.Latex):
     """
